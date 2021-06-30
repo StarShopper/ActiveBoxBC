@@ -1,0 +1,31 @@
+// main: ../style.css
+
+.nav{
+    display: flex;
+    font-family: "Raleway";
+    font-size: 0.94rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.nav__link{
+    margin-left: 50px;
+
+    text-decoration: none;
+    color: @gray;
+    transition: color .1s linear;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.nav__link:hover{
+    color: @white;
+}
